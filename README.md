@@ -16,7 +16,7 @@ Result of InstrumentedTest.test:
 ...
 ```
 
-Result of host test (`gcc native-lib.c -lpthread -std=gnu11 -Wall -DTEST_HOST`):
+Result of host test (`gcc -DTEST_HOST app/src/main/cpp/native-lib.c -lpthread -std=gnu11 -o ./test-ndk-bug && ./test-ndk-bug`):
 ```
 loop 0
 loop 1
